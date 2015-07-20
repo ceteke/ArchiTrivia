@@ -11,6 +11,7 @@ import Alamofire
 
 class FriendsTableViewController: UITableViewController {
     var friends: [Friend] = [Friend]()
+    var sellectedChallengeID = -1
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.contentInset = UIEdgeInsetsMake(15, 0, 0, 0);
@@ -125,8 +126,13 @@ class FriendsTableViewController: UITableViewController {
                 Alamofire.request(.GET, Constants.getURL() + "challenge?challenged_id=\(friend.id)&challenger_id=\(id)")
                     .responseJSON { (_, _, JSON, _) in
                         if let json = JSON as? NSDictionary{
+                            println(json)
                             if let status = json.valueForKey("status") as? String{
                                 self.mm_drawerController.closeDrawerAnimated(true, completion: nil)
+                                if let challenge_id = json.valueForKey("id") as? Int{
+                                    self.sellectedChallengeID = challenge_id
+                                    self.performSegueWithIdentifier("get_questions", sender: self)
+                                }
                                 println(status)
                             }else{
                                 println("Error challenging")
@@ -175,14 +181,18 @@ class FriendsTableViewController: UITableViewController {
     }
     */
     
-    /*
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+        if let destination = segue.destinationViewController as? UINavigationController{
+            if let questionViewController = destination.viewControllers[0] as? QuestionViewController{
+                questionViewController.challengeID = self.sellectedChallengeID
+            }
+        }
+
     }
-    */
+    
     
 }

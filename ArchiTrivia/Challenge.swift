@@ -15,14 +15,16 @@ class Challenge{
     var id: Int
     var challenger_point: Int
     var challenged_point: Int
+    var turn: Int
     
-    init(challenged_id: String, challenger_id: String, id: Int, challenger_point: Int, challenged_point: Int){
+    init(challenged_id: String, challenger_id: String, id: Int, challenger_point: Int, challenged_point: Int, turn: Int){
         
         self.challenged_id = challenged_id
         self.challenged_point = challenged_point
         self.challenger_id = challenger_id
         self.challenger_point = challenger_point
         self.id = id
+        self.turn = turn
     }
     
     

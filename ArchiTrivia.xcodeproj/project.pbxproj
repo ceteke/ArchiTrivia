@@ -13,6 +13,31 @@
 		B28170151B59C56300041B9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B28170141B59C56300041B9F /* Images.xcassets */; };
 		B28170181B59C56300041B9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B28170161B59C56300041B9F /* LaunchScreen.xib */; };
 		B28170241B59C56300041B9F /* ArchiTriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170231B59C56300041B9F /* ArchiTriviaTests.swift */; };
+		B281703C1B59C58D00041B9F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28170351B59C57C00041B9F /* Alamofire.framework */; };
+		B281703D1B59C5A200041B9F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28170351B59C57C00041B9F /* Alamofire.framework */; };
+		B281703E1B59C5A200041B9F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B28170351B59C57C00041B9F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B281706B1B59C62A00041B9F /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170611B59C62A00041B9F /* Challenge.swift */; };
+		B281706C1B59C62A00041B9F /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170621B59C62A00041B9F /* ChallengeTableViewCell.swift */; };
+		B281706D1B59C62A00041B9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170631B59C62A00041B9F /* Constants.swift */; };
+		B281706E1B59C62A00041B9F /* Contacts-25.png in Resources */ = {isa = PBXBuildFile; fileRef = B28170641B59C62A00041B9F /* Contacts-25.png */; };
+		B281706F1B59C62A00041B9F /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170651B59C62A00041B9F /* DrawerViewController.swift */; };
+		B28170701B59C62A00041B9F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170661B59C62A00041B9F /* Friend.swift */; };
+		B28170711B59C62A00041B9F /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170671B59C62A00041B9F /* FriendsTableViewCell.swift */; };
+		B28170721B59C62A00041B9F /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170681B59C62A00041B9F /* MainScreenViewController.swift */; };
+		B28170741B59C62A00041B9F /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B281706A1B59C62A00041B9F /* QuestionViewController.swift */; };
+		B281707C1B59C68D00041B9F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28170751B59C68D00041B9F /* Bolts.framework */; };
+		B281707D1B59C68D00041B9F /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B28170761B59C68D00041B9F /* FacebookSDKStrings.bundle */; };
+		B281707E1B59C68D00041B9F /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28170771B59C68D00041B9F /* FBAudienceNetwork.framework */; };
+		B281707F1B59C68D00041B9F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28170781B59C68D00041B9F /* FBSDKCoreKit.framework */; };
+		B28170801B59C68D00041B9F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28170791B59C68D00041B9F /* FBSDKLoginKit.framework */; };
+		B28170811B59C68D00041B9F /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B281707A1B59C68D00041B9F /* FBSDKMessengerShareKit.framework */; };
+		B28170821B59C68D00041B9F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B281707B1B59C68D00041B9F /* FBSDKShareKit.framework */; };
+		B281708E1B59C6A700041B9F /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B28170841B59C6A700041B9F /* MMDrawerBarButtonItem.m */; };
+		B281708F1B59C6A700041B9F /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28170861B59C6A700041B9F /* MMDrawerController.m */; };
+		B28170901B59C6A700041B9F /* MMDrawerController+Storyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B28170881B59C6A700041B9F /* MMDrawerController+Storyboard.m */; };
+		B28170911B59C6A700041B9F /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = B281708B1B59C6A700041B9F /* MMDrawerVisualState.m */; };
+		B28170921B59C6A700041B9F /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B281708D1B59C6A700041B9F /* UIViewController+MMDrawerController.m */; };
+		B281709A1B59C8C400041B9F /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28170991B59C8C400041B9F /* FriendsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +48,56 @@
 			remoteGlobalIDString = B28170071B59C56300041B9F;
 			remoteInfo = ArchiTrivia;
 		};
+		B28170341B59C57C00041B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		B28170361B59C57C00041B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		B28170381B59C57C00041B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		B281703A1B59C57C00041B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		B281703F1B59C5A200041B9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B28170411B59C5A200041B9F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B281703E1B59C5A200041B9F /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B28170081B59C56300041B9F /* ArchiTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchiTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +110,36 @@
 		B281701D1B59C56300041B9F /* ArchiTriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArchiTriviaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28170221B59C56300041B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B28170231B59C56300041B9F /* ArchiTriviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiTriviaTests.swift; sourceTree = "<group>"; };
+		B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Downloads/Alamofire-master 3/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		B28170601B59C62A00041B9F /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		B28170611B59C62A00041B9F /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		B28170621B59C62A00041B9F /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		B28170631B59C62A00041B9F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B28170641B59C62A00041B9F /* Contacts-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-25.png"; sourceTree = "<group>"; };
+		B28170651B59C62A00041B9F /* DrawerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
+		B28170661B59C62A00041B9F /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		B28170671B59C62A00041B9F /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		B28170681B59C62A00041B9F /* MainScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		B281706A1B59C62A00041B9F /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		B28170751B59C68D00041B9F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
+		B28170761B59C68D00041B9F /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKStrings.bundle; path = ../../Documents/FacebookSDK/FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		B28170771B59C68D00041B9F /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = ../../Documents/FacebookSDK/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		B28170781B59C68D00041B9F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B28170791B59C68D00041B9F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B281707A1B59C68D00041B9F /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../Documents/FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		B281707B1B59C68D00041B9F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		B28170831B59C6A700041B9F /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerBarButtonItem.h; path = MMDrawerController/MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		B28170841B59C6A700041B9F /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerBarButtonItem.m; path = MMDrawerController/MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		B28170851B59C6A700041B9F /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerController.h; path = MMDrawerController/MMDrawerController.h; sourceTree = "<group>"; };
+		B28170861B59C6A700041B9F /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerController.m; path = MMDrawerController/MMDrawerController.m; sourceTree = "<group>"; };
+		B28170871B59C6A700041B9F /* MMDrawerController+Storyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Storyboard.h"; path = "MMDrawerController/MMDrawerController+Storyboard.h"; sourceTree = "<group>"; };
+		B28170881B59C6A700041B9F /* MMDrawerController+Storyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MMDrawerController+Storyboard.m"; path = "MMDrawerController/MMDrawerController+Storyboard.m"; sourceTree = "<group>"; };
+		B28170891B59C6A700041B9F /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MMDrawerController+Subclass.h"; path = "MMDrawerController/MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		B281708A1B59C6A700041B9F /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMDrawerVisualState.h; path = MMDrawerController/MMDrawerVisualState.h; sourceTree = "<group>"; };
+		B281708B1B59C6A700041B9F /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMDrawerVisualState.m; path = MMDrawerController/MMDrawerVisualState.m; sourceTree = "<group>"; };
+		B281708C1B59C6A700041B9F /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MMDrawerController.h"; path = "MMDrawerController/UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		B281708D1B59C6A700041B9F /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MMDrawerController.m"; path = "MMDrawerController/UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		B28170991B59C8C400041B9F /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +147,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28170821B59C68D00041B9F /* FBSDKShareKit.framework in Frameworks */,
+				B281707F1B59C68D00041B9F /* FBSDKCoreKit.framework in Frameworks */,
+				B281707C1B59C68D00041B9F /* Bolts.framework in Frameworks */,
+				B28170801B59C68D00041B9F /* FBSDKLoginKit.framework in Frameworks */,
+				B281703C1B59C58D00041B9F /* Alamofire.framework in Frameworks */,
+				B281703D1B59C5A200041B9F /* Alamofire.framework in Frameworks */,
+				B281707E1B59C68D00041B9F /* FBAudienceNetwork.framework in Frameworks */,
+				B28170811B59C68D00041B9F /* FBSDKMessengerShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +171,11 @@
 		B2816FFF1B59C56300041B9F = {
 			isa = PBXGroup;
 			children = (
+				B28170931B59C6D700041B9F /* Frameworks */,
 				B281700A1B59C56300041B9F /* ArchiTrivia */,
 				B28170201B59C56300041B9F /* ArchiTriviaTests */,
 				B28170091B59C56300041B9F /* Products */,
+				B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +191,14 @@
 		B281700A1B59C56300041B9F /* ArchiTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				B28170981B59C73700041B9F /* Models */,
+				B28170961B59C71400041B9F /* ViewControllers */,
+				B28170941B59C6E900041B9F /* Libraries */,
 				B281700D1B59C56300041B9F /* AppDelegate.swift */,
-				B281700F1B59C56300041B9F /* ViewController.swift */,
 				B28170111B59C56300041B9F /* Main.storyboard */,
 				B28170141B59C56300041B9F /* Images.xcassets */,
 				B28170161B59C56300041B9F /* LaunchScreen.xib */,
+				B28170601B59C62A00041B9F /* Bridging-Header.h */,
 				B281700B1B59C56300041B9F /* Supporting Files */,
 			);
 			path = ArchiTrivia;
@@ -112,6 +229,90 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B281702E1B59C57C00041B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28170351B59C57C00041B9F /* Alamofire.framework */,
+				B28170371B59C57C00041B9F /* Alamofire.framework */,
+				B28170391B59C57C00041B9F /* Alamofire iOS Tests.xctest */,
+				B281703B1B59C57C00041B9F /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B28170931B59C6D700041B9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B28170751B59C68D00041B9F /* Bolts.framework */,
+				B28170761B59C68D00041B9F /* FacebookSDKStrings.bundle */,
+				B28170771B59C68D00041B9F /* FBAudienceNetwork.framework */,
+				B28170781B59C68D00041B9F /* FBSDKCoreKit.framework */,
+				B28170791B59C68D00041B9F /* FBSDKLoginKit.framework */,
+				B281707A1B59C68D00041B9F /* FBSDKMessengerShareKit.framework */,
+				B281707B1B59C68D00041B9F /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B28170941B59C6E900041B9F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B28170641B59C62A00041B9F /* Contacts-25.png */,
+				B28170951B59C6F600041B9F /* MMDrawerController */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		B28170951B59C6F600041B9F /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				B28170831B59C6A700041B9F /* MMDrawerBarButtonItem.h */,
+				B28170841B59C6A700041B9F /* MMDrawerBarButtonItem.m */,
+				B28170851B59C6A700041B9F /* MMDrawerController.h */,
+				B28170861B59C6A700041B9F /* MMDrawerController.m */,
+				B28170871B59C6A700041B9F /* MMDrawerController+Storyboard.h */,
+				B28170881B59C6A700041B9F /* MMDrawerController+Storyboard.m */,
+				B28170891B59C6A700041B9F /* MMDrawerController+Subclass.h */,
+				B281708A1B59C6A700041B9F /* MMDrawerVisualState.h */,
+				B281708B1B59C6A700041B9F /* MMDrawerVisualState.m */,
+				B281708C1B59C6A700041B9F /* UIViewController+MMDrawerController.h */,
+				B281708D1B59C6A700041B9F /* UIViewController+MMDrawerController.m */,
+			);
+			name = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		B28170961B59C71400041B9F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B28170971B59C72900041B9F /* Cells */,
+				B28170651B59C62A00041B9F /* DrawerViewController.swift */,
+				B28170681B59C62A00041B9F /* MainScreenViewController.swift */,
+				B281706A1B59C62A00041B9F /* QuestionViewController.swift */,
+				B281700F1B59C56300041B9F /* ViewController.swift */,
+				B28170991B59C8C400041B9F /* FriendsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B28170971B59C72900041B9F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B28170621B59C62A00041B9F /* ChallengeTableViewCell.swift */,
+				B28170671B59C62A00041B9F /* FriendsTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B28170981B59C73700041B9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B28170611B59C62A00041B9F /* Challenge.swift */,
+				B28170631B59C62A00041B9F /* Constants.swift */,
+				B28170661B59C62A00041B9F /* Friend.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +323,12 @@
 				B28170041B59C56300041B9F /* Sources */,
 				B28170051B59C56300041B9F /* Frameworks */,
 				B28170061B59C56300041B9F /* Resources */,
+				B28170411B59C5A200041B9F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B28170401B59C5A200041B9F /* PBXTargetDependency */,
 			);
 			name = ArchiTrivia;
 			productName = ArchiTrivia;
@@ -179,6 +382,12 @@
 			mainGroup = B2816FFF1B59C56300041B9F;
 			productRefGroup = B28170091B59C56300041B9F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B281702E1B59C57C00041B9F /* Products */;
+					ProjectRef = B281702D1B59C57C00041B9F /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B28170071B59C56300041B9F /* ArchiTrivia */,
@@ -187,13 +396,46 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		B28170351B59C57C00041B9F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B28170341B59C57C00041B9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B28170371B59C57C00041B9F /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = B28170361B59C57C00041B9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B28170391B59C57C00041B9F /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = B28170381B59C57C00041B9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B281703B1B59C57C00041B9F /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = B281703A1B59C57C00041B9F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		B28170061B59C56300041B9F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B28170131B59C56300041B9F /* Main.storyboard in Resources */,
+				B281706E1B59C62A00041B9F /* Contacts-25.png in Resources */,
 				B28170181B59C56300041B9F /* LaunchScreen.xib in Resources */,
+				B281707D1B59C68D00041B9F /* FacebookSDKStrings.bundle in Resources */,
 				B28170151B59C56300041B9F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +454,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B281706D1B59C62A00041B9F /* Constants.swift in Sources */,
+				B28170701B59C62A00041B9F /* Friend.swift in Sources */,
 				B28170101B59C56300041B9F /* ViewController.swift in Sources */,
+				B28170921B59C6A700041B9F /* UIViewController+MMDrawerController.m in Sources */,
+				B281708E1B59C6A700041B9F /* MMDrawerBarButtonItem.m in Sources */,
+				B28170711B59C62A00041B9F /* FriendsTableViewCell.swift in Sources */,
+				B281706C1B59C62A00041B9F /* ChallengeTableViewCell.swift in Sources */,
+				B28170911B59C6A700041B9F /* MMDrawerVisualState.m in Sources */,
+				B281706B1B59C62A00041B9F /* Challenge.swift in Sources */,
+				B28170741B59C62A00041B9F /* QuestionViewController.swift in Sources */,
+				B281709A1B59C8C400041B9F /* FriendsTableViewController.swift in Sources */,
 				B281700E1B59C56300041B9F /* AppDelegate.swift in Sources */,
+				B281706F1B59C62A00041B9F /* DrawerViewController.swift in Sources */,
+				B281708F1B59C6A700041B9F /* MMDrawerController.m in Sources */,
+				B28170721B59C62A00041B9F /* MainScreenViewController.swift in Sources */,
+				B28170901B59C6A700041B9F /* MMDrawerController+Storyboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +488,11 @@
 			isa = PBXTargetDependency;
 			target = B28170071B59C56300041B9F /* ArchiTrivia */;
 			targetProxy = B281701E1B59C56300041B9F /* PBXContainerItemProxy */;
+		};
+		B28170401B59C5A200041B9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = B281703F1B59C5A200041B9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -342,9 +603,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cem/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = ArchiTrivia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cem/Desktop/ArchiTrivia/ArchiTrivia/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -352,9 +618,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cem/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = ArchiTrivia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/cem/Desktop/ArchiTrivia/ArchiTrivia/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +682,7 @@
 				B28170291B59C56300041B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B281702A1B59C56300041B9F /* Build configuration list for PBXNativeTarget "ArchiTriviaTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +691,7 @@
 				B281702C1B59C56300041B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

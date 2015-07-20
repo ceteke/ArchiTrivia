@@ -49,6 +49,7 @@ class QuestionViewController: UIViewController {
                                     self.putRandomAnswer(answers)
                                     if let questionTitle = json.valueForKey("name") as? String{
                                         self.questionText.text = questionTitle
+                                        self.questionText.sizeToFit()
                                     }
                                 }
                             }

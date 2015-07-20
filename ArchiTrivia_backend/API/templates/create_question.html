@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Question</title>
+    </head>
+
+    <body>
+    	<center>
+        <h1>Create a New Question</h1>
+
+        {% if created %}
+        <h2>Created!</h2>
+        <strong>Create another</strong><br />
+        {% else %}
+        <strong>Question info</strong><br />
+        {% endif %}
+
+        <form id="form" method="post"
+                enctype="multipart/form-data">
+
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <!-- Provide a button to click to submit the form. -->
+            <input type="submit" name="submit" value="Create" />
+        </form>
+        </center>
+    </body>
+</html>
+

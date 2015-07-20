@@ -19,7 +19,10 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     var rankLabel = UILabel()
     @IBOutlet weak var tableView: UITableView!
     @IBAction func exit_action(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        //let loginManager = FBSDKLoginManager()
+        //loginManager.logOut()
+        self.getChallenges()
+        self.getUserRank(rankLabel, topContainer: topContainer)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -142,6 +145,9 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
                         topContainer.addSubview(rankLabel)
                     }else{
                         println("Error getting rank")
+                        let loginManager = FBSDKLoginManager()
+                        loginManager.logOut()
+                        self.dismissViewControllerAnimated(true, completion: nil)
                     }
                 }else{
                     println("Error getting rank")
@@ -164,7 +170,8 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
                                 let challenge_id = challenge.valueForKey("id") as! Int
                                 let challenger_point = challenge.valueForKey("challenger_point") as! Int
                                 let challenged_point = challenge.valueForKey("challenged_point") as! Int
-                                self.currentChallenges.append(Challenge(challenged_id: challenged_id as String, challenger_id: challenger_id as String, id: challenge_id, challenger_point: challenger_point, challenged_point: challenged_point))
+                                let turn = challenge.valueForKey("turn") as! Int
+                                self.currentChallenges.append(Challenge(challenged_id: challenged_id as String, challenger_id: challenger_id as String, id: challenge_id, challenger_point: challenger_point, challenged_point: challenged_point, turn: turn))
                             }
                         }
                         self.tableView.reloadData()
@@ -181,9 +188,15 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         let challenge = currentChallenges[indexPath.row]
         
         cell.challenged_point.text = String(challenge.challenged_point)
+        let turn = challenge.turn
         
         if (currentID == challenge.challenger_id){
             cell.challenger_name.text = "You"
+            if turn != 0{
+                cell.challenger_name.textColor = UIColor.lightGrayColor()
+            }else{
+                cell.challenger_name.textColor = UIColor.blackColor()
+            }
         }else{
             for f in friends{
                 if f.id == challenge.challenger_id{
@@ -197,6 +210,11 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         
         if(currentID == challenge.challenged_id){
             cell.challenged_name.text = "You"
+            if turn != 1{
+                cell.challenged_name.textColor = UIColor.lightGrayColor()
+            }else{
+                cell.challenged_name.textColor = UIColor.blackColor()
+            }
         }else{
             for f in friends{
                 if f.id == challenge.challenged_id{
@@ -217,7 +235,16 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.sellectedChallengeID = currentChallenges[indexPath.row].id
-        self.performSegueWithIdentifier("get_questions", sender: self)
+        let challenge = currentChallenges[indexPath.row]
+        if challenge.challenger_id == self.currentID && challenge.turn == 0{
+            self.performSegueWithIdentifier("get_questions", sender: self)
+        }else if challenge.challenged_id == self.currentID && challenge.turn == 1{
+            self.performSegueWithIdentifier("get_questions", sender: self)
+        }else{
+            println("Not your turn")
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
+        
     }
     
     func getFriends(){
