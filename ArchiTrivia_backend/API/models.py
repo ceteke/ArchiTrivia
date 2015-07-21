@@ -8,9 +8,10 @@ class Question(models.Model):
 	ans_1 = models.CharField(max_length=400)
 	ans_2 = models.CharField(max_length=400)
 	ans_3 = models.CharField(max_length=400)
+	image_url = models.CharField(max_length=400, default="None")
 
 	def to_dict(self):
-		return {"name": self.name, "ans_1": self.ans_1, "ans_2": self.ans_2, "ans_3": self.ans_3, "correct_answer": self.correct_answer}
+		return {"name": self.name, "ans_1": self.ans_1, "ans_2": self.ans_2, "ans_3": self.ans_3, "correct_answer": self.correct_answer, 'image_url': self.image_url}
 
 class Player(models.Model):
 	name = models.CharField(max_length=200)

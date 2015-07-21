@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20275931B5D8C290057F006 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20275921B5D8C290057F006 /* SweetAlert.swift */; };
+		B20275991B5D9A990057F006 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B20275981B5D9A990057F006 /* MBProgressHUD.m */; };
 		B281700E1B59C56300041B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B281700D1B59C56300041B9F /* AppDelegate.swift */; };
 		B28170101B59C56300041B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B281700F1B59C56300041B9F /* ViewController.swift */; };
 		B28170131B59C56300041B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B28170111B59C56300041B9F /* Main.storyboard */; };
@@ -100,6 +102,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B20275921B5D8C290057F006 /* SweetAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		B20275971B5D9A990057F006 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		B20275981B5D9A990057F006 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B28170081B59C56300041B9F /* ArchiTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchiTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B281700C1B59C56300041B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B281700D1B59C56300041B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +262,9 @@
 		B28170941B59C6E900041B9F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B20275971B5D9A990057F006 /* MBProgressHUD.h */,
+				B20275981B5D9A990057F006 /* MBProgressHUD.m */,
+				B20275921B5D8C290057F006 /* SweetAlert.swift */,
 				B28170641B59C62A00041B9F /* Contacts-25.png */,
 				B28170951B59C6F600041B9F /* MMDrawerController */,
 			);
@@ -458,6 +466,7 @@
 				B28170701B59C62A00041B9F /* Friend.swift in Sources */,
 				B28170101B59C56300041B9F /* ViewController.swift in Sources */,
 				B28170921B59C6A700041B9F /* UIViewController+MMDrawerController.m in Sources */,
+				B20275931B5D8C290057F006 /* SweetAlert.swift in Sources */,
 				B281708E1B59C6A700041B9F /* MMDrawerBarButtonItem.m in Sources */,
 				B28170711B59C62A00041B9F /* FriendsTableViewCell.swift in Sources */,
 				B281706C1B59C62A00041B9F /* ChallengeTableViewCell.swift in Sources */,
@@ -466,6 +475,7 @@
 				B28170741B59C62A00041B9F /* QuestionViewController.swift in Sources */,
 				B281709A1B59C8C400041B9F /* FriendsTableViewController.swift in Sources */,
 				B281700E1B59C56300041B9F /* AppDelegate.swift in Sources */,
+				B20275991B5D9A990057F006 /* MBProgressHUD.m in Sources */,
 				B281706F1B59C62A00041B9F /* DrawerViewController.swift in Sources */,
 				B281708F1B59C6A700041B9F /* MMDrawerController.m in Sources */,
 				B28170721B59C62A00041B9F /* MainScreenViewController.swift in Sources */,

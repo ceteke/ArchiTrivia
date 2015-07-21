@@ -74,14 +74,22 @@ def getChallenges(request):
 def getAllQuestions(request):
 	questions = Question.objects.all()
 	data_json = {'count': len(questions),'questions': []}
+	html_string = ""
 	for q in questions:
-		data_json['questions'].append({'question': q.name, 'correct_answer': q.correct_answer, 'ans_1': q.ans_1, 'ans_2': q.ans_2, 'ans_3': q.ans_3})
+		img_url = q.image_url
+		if img_url != "None":
+			html_string += "<img src=\""+img_url+"\">"
+		html_string += "<h2>" + q.name + "</h2>"
+		html_string += "<h4>" + q.correct_answer + "</h4>" + "<hr>"
+		
+		#data_json['questions'].append({'question': q.name, 'correct_answer': q.correct_answer, 'ans_1': q.ans_1, 'ans_2': q.ans_2, 'ans_3': q.ans_3, 'image_url':q.image_url, 'id': q.pk})
 
-	return HttpResponse(json.dumps(data_json, indent=4), content_type='json')
+	#return HttpResponse(json.dumps(data_json, indent=4), content_type='json')
+	return HttpResponse(html_string, charset="utf-8")
 
 def getRandomQuestion(request):
 	question = Question.objects.order_by('?').first()
-
+	
 	return HttpResponse(json.dumps(question.to_dict(), indent=4), content_type='json')
 
 def completeAnswering(request):

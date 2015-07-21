@@ -11,6 +11,6 @@ import Foundation
 class Constants{
     var didPassEntrance: Bool = false
     class func getURL() -> String{
-        return "http://172.20.93.65:8000/api/"
+        return "http://172.21.8.20:8000/api/"
     }
 }

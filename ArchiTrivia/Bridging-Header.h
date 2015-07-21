@@ -16,4 +16,5 @@
 #import "MMDrawerController.h"
 #import "MMDrawerVisualState.h"
 #import "UIViewController+MMDrawerController.h"
+#import "MBProgressHUD.h"
 #endif

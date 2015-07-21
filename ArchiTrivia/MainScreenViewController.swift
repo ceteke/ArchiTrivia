@@ -88,6 +88,8 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
         imageView.clipsToBounds = true
         //MARK: Get Current User Info
+        let hud = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
+        hud.labelText = "Getting Info"
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
             
@@ -123,9 +125,9 @@ class MainScreenViewController: UIViewController, UITableViewDelegate, UITableVi
                         //hud.hide(true)
                 }
                 
-                
                 self.getUserRank(self.rankLabel, topContainer: self.topContainer)
                 self.getChallenges()
+                MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
                 self.isAlreadyLoaded = true
             }
         })
